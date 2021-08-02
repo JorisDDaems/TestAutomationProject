@@ -1,26 +1,30 @@
-package base;
+package StepDefinitions;
 
-import org.openqa.selenium.By;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.openqa.selenium.support.events.WebDriverEventListener;
 import pages.HomePage;
+import pages.VanillaJsPage;
 import utilities.EventReporter;
 
-public class BaseTests {
+public class BaseClass {
 
-    private EventFiringWebDriver driver;
+    public WebDriver driver;
     protected HomePage homePage;
+    public VanillaJsPage vanillaJsPage;
+
 
     @BeforeClass
     public void setUp(){
 
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         driver = new EventFiringWebDriver(new ChromeDriver(getChromeOptions()));
-        driver.register(new EventReporter());
+        //driver.register(new EventReporter());
         driver.get("https://todomvc.com/");
         System.out.println(driver.getTitle());
         homePage = new HomePage(driver);
@@ -41,11 +45,5 @@ public class BaseTests {
     }
 
 
-    public static void main(String[] args) {
-
-        BaseTests test = new BaseTests();
-        test.setUp();
-        test.tearDown();
-    }
 
 }

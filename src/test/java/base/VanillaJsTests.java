@@ -12,6 +12,7 @@ import static org.testng.Assert.assertTrue;
 
 public class VanillaJsTests extends BaseTests {
 
+    /*
     @Test
     public void test1CreateAToDo(){
         VanillaJsPage vanillaJsPage = homePage.clickVanillaJs();
@@ -123,5 +124,7 @@ public class VanillaJsTests extends BaseTests {
         //assertEquals(caption.getLinkText(), "The first to do!");
     }
 
+
+     */
 
 }
