@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3a920d67-e278-491d-bae5-ddb5fee7fb6f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/stepdefs/BaseStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/62e28e6aba8b9b09c5020c11acc3b3746fa22660" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/4/842ebf4d8599d50ba8484aaefa0bc731eca54827" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BenchAssignmentUIAutomation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BenchAssignmentUIAutomation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Features/RemoveToDo.feature" beforeDir="false" afterPath="$PROJECT_DIR$/resources/features/RemoveToDo.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Features/ToDoScenarios.feature" beforeDir="false" afterPath="$PROJECT_DIR$/resources/features/ToDoScenarios.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinitions/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/BaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinitions/ToDoScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/stepdefs/ToDoScenarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HoverPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/VanillaJsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/VanillaJsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/VanillaJsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/VanillaJsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StepDefinitions/BaseClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StepDefinitions/ToDoScenarios.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/HoverPage$FigureCaption.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/HoverPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/VanillaJsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/VanillaJsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestRunner/TestRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/BaseTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/HoverTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/VanillaJsTests.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1vJ3wjv6PTLSzvFBegOvcMvT64Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Joris\Desktop\INTEC\BenchAssignmentUIAutomation\resources" />
+      <recent name="C:\Users\Joris\Desktop\INTEC\BenchAssignmentUIAutomation\src\test\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Joris\Desktop\INTEC\BenchAssignmentUIAutomation\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Scenario: Create a ToDo (1)">
+    <configuration name="Scenario: Create a ToDo (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/resources/features/ToDoScenarios.feature" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.cli.Main" />
+      <module name="BenchAssignmentUIAutomation" />
+      <option name="NAME_FILTER" value="^Create a ToDo$" />
+      <option name="PROGRAM_PARAMETERS" value=" --format org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Create a ToDo$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Create a ToDo" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VanillaJsTests.test1CreateAToDo" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BenchAssignmentUIAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="base" />
+      <option name="MAIN_CLASS_NAME" value="base.VanillaJsTests" />
+      <option name="METHOD_NAME" value="test1CreateAToDo" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VanillaJsTests.test3CompleteAToDo" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BenchAssignmentUIAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="base" />
+      <option name="MAIN_CLASS_NAME" value="base.VanillaJsTests" />
+      <option name="METHOD_NAME" value="test3CompleteAToDo" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VanillaJsTests.test4EditAToDo" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BenchAssignmentUIAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="base" />
+      <option name="MAIN_CLASS_NAME" value="base.VanillaJsTests" />
+      <option name="METHOD_NAME" value="test4EditAToDo" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VanillaJsTests.test5ViewingCompletedToDo" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BenchAssignmentUIAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="base" />
+      <option name="MAIN_CLASS_NAME" value="base.VanillaJsTests" />
+      <option name="METHOD_NAME" value="test5ViewingCompletedToDo" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Scenario: Create a ToDo (1)" />
+        <item itemvalue="TestNG.VanillaJsTests.test5ViewingCompletedToDo" />
+        <item itemvalue="TestNG.VanillaJsTests.test4EditAToDo" />
+        <item itemvalue="TestNG.VanillaJsTests.test3CompleteAToDo" />
+        <item itemvalue="TestNG.VanillaJsTests.test1CreateAToDo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a920d67-e278-491d-bae5-ddb5fee7fb6f" name="Default Changelist" comment="" />
+      <created>1626266606975</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626266606975</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Trying to implement scenario.feature file">
+      <created>1627895005436</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1627895005436</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Trying to implement scenario.feature file">
+      <created>1627895841257</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1627895841257</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Trying to implement scenario.feature file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to implement scenario.feature file" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="53" key="#Plugins" timestamp="1627471373024">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="53" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1627471373024" />
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1626708981099">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1626708981099" />
+    <state x="113" y="217" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1627471043848">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="113" y="217" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1627471043848" />
+    <state x="996" y="189" key="#com.intellij.ide.util.MemberChooser" timestamp="1626706504487">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="996" y="189" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1626706504487" />
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1626270858122" />
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1627294252552">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1627294252552" />
+    <state x="86" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1627979325092">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="86" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1627979325092" />
+    <state x="276" y="401" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1627979240468">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="276" y="401" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040" timestamp="1627979240468" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1627978384311">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1627978384311" />
+    <state width="1877" height="399" key="GridCell.Tab.0.bottom" timestamp="1627903603945">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="723" height="301" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1627566069302" />
+    <state width="1877" height="399" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1627903603945" />
+    <state width="1877" height="399" key="GridCell.Tab.0.center" timestamp="1627903603944">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="723" height="301" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1627566069302" />
+    <state width="1877" height="399" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1627903603944" />
+    <state width="1877" height="399" key="GridCell.Tab.0.left" timestamp="1627903603944">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="723" height="301" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1627566069302" />
+    <state width="1877" height="399" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1627903603944" />
+    <state width="1877" height="399" key="GridCell.Tab.0.right" timestamp="1627903603944">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="723" height="301" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1627566069302" />
+    <state width="1877" height="399" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1627903603944" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1626793617462">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1626793617462" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1626793617462">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1626793617462" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1626793617462">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1626793617462" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1626793617462">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1626793617462" />
+    <state x="0" y="70" key="Maven.ArtifactSearchDialog" timestamp="1627476098229">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="70" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1627476098229" />
+    <state x="922" y="168" key="SettingsEditor" timestamp="1627981151150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="555" y="115" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1627548596953" />
+    <state x="922" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1627981151150" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1627895844796">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1627895844796" />
+    <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1626789832075">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1626789832075" />
+    <state x="184" y="412" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1627979587151">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="412" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1627979587151" />
+    <state x="164" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1627979188781">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="164" y="233" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1627979188781" />
+    <state x="469" y="170" key="refactoring.ChangeSignatureDialog" timestamp="1626773833014">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="469" y="170" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1626773833014" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1627471289252">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1627471289252" />
+  </component>
+</project>

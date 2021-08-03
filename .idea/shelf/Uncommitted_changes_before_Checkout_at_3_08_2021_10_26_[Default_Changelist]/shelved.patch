@@ -1,0 +1,91 @@
+Index: src/test/java/base/VanillaJsTests.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package base;\r\n\r\nimport org.openqa.selenium.By;\r\nimport org.openqa.selenium.WebElement;\r\nimport org.testng.annotations.Test;\r\nimport pages.HomePage;\r\nimport pages.VanillaJsPage;\r\nimport pages.HoverPage;\r\n\r\nimport static org.testng.Assert.assertEquals;\r\nimport static org.testng.Assert.assertTrue;\r\n\r\npublic class VanillaJsTests extends BaseTests {\r\n\r\n    @Test\r\n    public void test1CreateAToDo(){\r\n        VanillaJsPage vanillaJsPage = homePage.clickVanillaJs();\r\n        vanillaJsPage.enterText(\"Automation is fun!\");\r\n        assertEquals(vanillaJsPage.getResult(), \"Automation is fun!\");\r\n        System.out.println(vanillaJsPage.getToDoListAmount());\r\n    }\r\n\r\n    @Test\r\n    public void test2RemoveAToDo(){\r\n        String text1 = \"The first to do!\";\r\n        String text2 = \"The second to do!\";\r\n        String text3 = \"The third to do!\";\r\n        VanillaJsPage vanillaJsPage = homePage.clickVanillaJs();\r\n        vanillaJsPage.enterText(text1);\r\n        vanillaJsPage.enterText(text2);\r\n        vanillaJsPage.enterText(text3);\r\n        vanillaJsPage.deleteToDo(1);\r\n        assertEquals(vanillaJsPage.getToDoListAmount(), 1);\r\n        assertEquals(vanillaJsPage.getResult(), text1 + \"\\n\" + text3);\r\n        System.out.println(vanillaJsPage.getResult());\r\n    }\r\n\r\n    @Test\r\n    public void test3CompleteAToDo(){\r\n        String text1 = \"The first to do!\";\r\n        String text2 = \"The second to do!\";\r\n        String text3 = \"The third to do!\";\r\n        VanillaJsPage vanillaJsPage = homePage.clickVanillaJs();\r\n        vanillaJsPage.enterText(text1);\r\n        vanillaJsPage.enterText(text2);\r\n        vanillaJsPage.enterText(text3);\r\n        vanillaJsPage.selectCompleteCheckBox(3);\r\n        System.out.println(vanillaJsPage.checkIfCheckBoxIsSelected());\r\n        assertEquals(vanillaJsPage.checkIfCheckBoxIsSelected(), \"The third to do!\");\r\n        System.out.println(vanillaJsPage.amountOfCheckBoxesSelected());\r\n        assertEquals(vanillaJsPage.amountOfCheckBoxesSelected(), 1);\r\n    }\r\n\r\n    @Test\r\n    public void test4EditAToDo(){\r\n        String text1 = \"The first to do!\";\r\n        String text2 = \"The second to do!\";\r\n        String text3 = \"The third to do!\";\r\n        VanillaJsPage vanillaJsPage = homePage.clickVanillaJs();\r\n        vanillaJsPage.enterText(text1);\r\n        vanillaJsPage.enterText(text2);\r\n        vanillaJsPage.enterText(text3);\r\n\r\n        System.out.println(vanillaJsPage.getResult());\r\n\r\n        System.out.println(vanillaJsPage.find(\"The second to do!\"));\r\n\r\n        vanillaJsPage.modifyText(\"this is the new input\");\r\n\r\n        assertEquals(vanillaJsPage.getResult(), text1 + \"\\nthis is the new input\\n\"  + text3);\r\n    }\r\n\r\n    @Test\r\n    public void test5ViewingCompletedToDo(){\r\n        String text1 = \"The first to do!\";\r\n        String text2 = \"The second to do!\";\r\n        String text3 = \"The third to do!\";\r\n        VanillaJsPage vanillaJsPage = homePage.clickVanillaJs();\r\n        vanillaJsPage.enterText(text1);\r\n        vanillaJsPage.enterText(text2);\r\n        vanillaJsPage.enterText(text3);\r\n        vanillaJsPage.changeToCompletedPage();\r\n        System.out.println(vanillaJsPage.toDoListAmount());\r\n        assertEquals(vanillaJsPage.toDoListAmount(), 0);\r\n        assertEquals(vanillaJsPage.amount(), \"3\");\r\n        vanillaJsPage.changeToAllPage();\r\n\r\n        vanillaJsPage.selectCompleteCheckBox(1);\r\n        vanillaJsPage.selectCompleteCheckBox(2);\r\n\r\n        vanillaJsPage.changeToCompletedPage();\r\n        assertEquals(vanillaJsPage.amountOfCheckBoxesSelected(), 2);\r\n        assertEquals(vanillaJsPage.amount(), \"1\");\r\n\r\n    }\r\n\r\n\r\n\r\n\r\n    @Test\r\n    public void testHoverDeleteElement(){\r\n        String text1 = \"The first to do!\";\r\n        String text2 = \"The second to do!\";\r\n        String text3 = \"The third to do!\";\r\n        VanillaJsPage vanillaJsPage = homePage.clickVanillaJs();\r\n        vanillaJsPage.enterText(text1);\r\n        vanillaJsPage.enterText(text2);\r\n        vanillaJsPage.enterText(text3);\r\n\r\n\r\n\r\n\r\n\r\n        HoverPage.FigureCaption caption = HoverPage.hoverOverList(1);\r\n        //assertTrue(caption.isCaptionDisplayed(), \"Caption not displayed\");\r\n        //System.out.println(caption);\r\n        System.out.println(caption.getTitle());\r\n        //caption.deleteToDo();\r\n        System.out.println(caption.getLink());\r\n        //System.out.println(caption.getLinkText());\r\n        caption.getLinkText();\r\n        assertEquals(caption.getTitle(), \"The first to do!\");\r\n        //assertEquals(caption.getLinkText(), \"The first to do!\");\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/base/VanillaJsTests.java	(revision d972aa7377ebe3ea3c71e5d11a56f65dab7ce521)
++++ src/test/java/base/VanillaJsTests.java	(date 1627979164402)
+@@ -22,7 +22,7 @@
+ 
+     @Test
+     public void test2RemoveAToDo(){
+-        String text1 = "The first to do!";
++        String text1 = "The first to do!"; 
+         String text2 = "The second to do!";
+         String text3 = "The third to do!";
+         VanillaJsPage vanillaJsPage = homePage.clickVanillaJs();
+Index: .idea/compiler.xml
+===================================================================
+--- .idea/compiler.xml	(revision d972aa7377ebe3ea3c71e5d11a56f65dab7ce521)
++++ .idea/compiler.xml	(revision d972aa7377ebe3ea3c71e5d11a56f65dab7ce521)
+@@ -1,13 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="CompilerConfiguration">
+-    <annotationProcessing>
+-      <profile name="Maven default annotation processors profile" enabled="true">
+-        <sourceOutputDir name="target/generated-sources/annotations" />
+-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+-        <outputRelativeToContentRoot value="true" />
+-        <module name="BenchAssignmentUIAutomation" />
+-      </profile>
+-    </annotationProcessing>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+===================================================================
+--- .idea/.gitignore	(revision d972aa7377ebe3ea3c71e5d11a56f65dab7ce521)
++++ .idea/.gitignore	(revision d972aa7377ebe3ea3c71e5d11a56f65dab7ce521)
+@@ -1,3 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+Index: .idea/misc.xml
+===================================================================
+--- .idea/misc.xml	(revision d972aa7377ebe3ea3c71e5d11a56f65dab7ce521)
++++ .idea/misc.xml	(revision d972aa7377ebe3ea3c71e5d11a56f65dab7ce521)
+@@ -1,14 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ExternalStorageConfigurationManager" enabled="true" />
+-  <component name="MavenProjectsManager">
+-    <option name="originalFiles">
+-      <list>
+-        <option value="$PROJECT_DIR$/pom.xml" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+-    <output url="file://$PROJECT_DIR$/out" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/jarRepositories.xml
+===================================================================
+--- .idea/jarRepositories.xml	(revision d972aa7377ebe3ea3c71e5d11a56f65dab7ce521)
++++ .idea/jarRepositories.xml	(revision d972aa7377ebe3ea3c71e5d11a56f65dab7ce521)
+@@ -1,20 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="RemoteRepositoriesConfiguration">
+-    <remote-repository>
+-      <option name="id" value="central" />
+-      <option name="name" value="Central Repository" />
+-      <option name="url" value="https://repo.maven.apache.org/maven2" />
+-    </remote-repository>
+-    <remote-repository>
+-      <option name="id" value="central" />
+-      <option name="name" value="Maven Central repository" />
+-      <option name="url" value="https://repo1.maven.org/maven2" />
+-    </remote-repository>
+-    <remote-repository>
+-      <option name="id" value="jboss.community" />
+-      <option name="name" value="JBoss Community repository" />
+-      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+-    </remote-repository>
+-  </component>
+-</project>
+\ No newline at end of file
