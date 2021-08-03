@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "C:\\Users\\Joris\\Desktop\\INTEC\\BenchAssignmentUIAutomation\\Features\\ToDoScenarios.feature",
-        glue = "StepDefinitions")
+        glue = "cucumber/stepdefs")
 
 public class TestRunner {
 }

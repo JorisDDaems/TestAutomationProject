@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class VanillaJsPage {
+public class VanillaJsPage extends HomePage {
 
     private WebDriver driver;
     private By inputField = By.className("new-todo");
@@ -16,7 +16,7 @@ public class VanillaJsPage {
     //private By deleteButton = By.xpath("/html/body/section/section/ul/li[1]/div/button");
 
     public VanillaJsPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     public void enterText(String text){

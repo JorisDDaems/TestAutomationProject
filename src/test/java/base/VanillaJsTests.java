@@ -1,12 +1,5 @@
 package base;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.annotations.Test;
-import pages.HomePage;
-import pages.VanillaJsPage;
-import pages.HoverPage;
-
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -23,7 +16,7 @@ public class VanillaJsTests extends BaseTests {
 
     @Test
     public void test2RemoveAToDo(){
-        String text1 = "The first to do!";
+        String text1 = "The first to do!"; 
         String text2 = "The second to do!";
         String text3 = "The third to do!";
         VanillaJsPage vanillaJsPage = homePage.clickVanillaJs();
