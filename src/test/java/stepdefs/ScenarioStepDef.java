@@ -1,27 +1,26 @@
 package stepdefs;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.chrome.ChromeDriver;
-import pages.VanillaJsPage;
+
 
 public class ScenarioStepDef extends BaseClass {
 
 
-
     @Given("I launch chrome browser")
     public void i_launch_chrome_browser() {
+        setUp();
+        /*
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         driver = new ChromeDriver();
         vanillaJsPage = new VanillaJsPage(driver);
-        //vanillaJsPage.setChromeDriver();
+         */
     }
 
-    @Given("I open the website")
+    @And("I open the website")
     public void i_open_the_website() {
         driver.get("https://todomvc.com/");
     }
@@ -50,4 +49,8 @@ public class ScenarioStepDef extends BaseClass {
     }
 
 
+    @And("I can close the site")
+    public void iCanCloseTheSite() {
+        tearDown();
+    }
 }
