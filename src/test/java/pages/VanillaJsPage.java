@@ -1,27 +1,50 @@
 package pages;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class VanillaJsPage extends HomePage {
+public class VanillaJsPage {
 
-    private WebDriver driver;
-    private By inputField = By.className("new-todo");
-    private By resultToDo = By.className("todo-list");
-    //private By deleteButton = By.xpath("/html/body/section/section/ul/li[1]/div/button");
+    public WebDriver vanillaDriver;
 
-    public VanillaJsPage(WebDriver driver) {
-        super(driver);
+    public VanillaJsPage(WebDriver vDriver) {
+        vanillaDriver = vDriver;
+        PageFactory.initElements(vDriver, this);
     }
 
+    @FindBy(className = "new-todo")
+    @CacheLookup
+    WebElement inputField;
+
+    @FindBy(className = "todo-list")
+    @CacheLookup
+    WebElement resultToDo;
+
+
+    @FindBy(xpath = "/html/body/section/section/ul/li[1]/div/button")
+    @CacheLookup
+    WebElement deleteButton;
+
+
+
+    public void clickLink(String linkText){
+        vanillaDriver.findElement(By.linkText(linkText)).click();
+    }
+
+
     public void enterText(String text){
-        driver.findElement(inputField).sendKeys(text, Keys.ENTER);
+        inputField.sendKeys(text, Keys.ENTER);
     }
 
     public String getResult(){
-        return driver.findElement(resultToDo).getText();
+        return resultToDo.getText();
     }
 
 
@@ -32,7 +55,7 @@ public class VanillaJsPage extends HomePage {
 
     public int getToDoListAmount(){
 
-        WebElement button= driver.findElement(By.xpath("//*[@class='todo-count']"));
+        WebElement button= vanillaDriver.findElement(By.xpath("//*[@class='todo-count']"));
         List<WebElement> buttonCount = button.findElements(By.tagName("strong"));
         return (int) buttonCount.stream().map(WebElement::getText).count();
     }
@@ -40,7 +63,7 @@ public class VanillaJsPage extends HomePage {
     public int toDoListAmount(){
 
         By todoList = By.className("todo-list");
-        int todoLists = (int) driver.findElements(todoList).stream().count()-1;
+        int todoLists = (int) vanillaDriver.findElements(todoList).stream().count()-1;
 
         return todoLists;
     }
@@ -56,34 +79,42 @@ public class VanillaJsPage extends HomePage {
     public void deleteToDo(int index){
 
         JavascriptExecutor js = null;
-        if (driver instanceof JavascriptExecutor) {
-            js = (JavascriptExecutor) driver;
+        if (vanillaDriver instanceof JavascriptExecutor) {
+            js = (JavascriptExecutor) vanillaDriver;
         }
         js.executeScript("return document.getElementsByClassName('view')["+ index + "].remove();");
     }
 
+
+
     public void selectCompleteCheckBox(int index){
         By checkBox = By.xpath("/html/body/section/section/ul/li["+ index +"]/div/input");
-        driver.findElement(checkBox).click();
+        vanillaDriver.findElement(checkBox).click();
     }
+
+
+    @FindBy(className = "completed")
+    @CacheLookup
+    WebElement todoChecked;
 
     public String checkIfCheckBoxIsSelected(){
 
-        By todoChecked = By.className("completed");
-        return driver.findElement(todoChecked).getText();
+        //By todoChecked = By.className("completed");
+        return todoChecked.getText();
     }
 
     public int amountOfCheckBoxesSelected(){
 
-        List<WebElement> buttonCount = driver.findElements(By.className("completed"));
+        List<WebElement> buttonCount = vanillaDriver.findElements(By.className("completed"));
         return (int) buttonCount.stream().map(WebElement::getText).count();
     }
 
 
 
+
     public String find(String sentence){
 
-        List<WebElement> toDoElements = driver.findElements(By.className("view"));
+        List<WebElement> toDoElements = vanillaDriver.findElements(By.className("view"));
         List<String> toDoList = toDoElements.stream().map(WebElement::getText).collect(Collectors.toList());
         String Element = toDoList.get(1);
         String element = toDoList.stream().filter(e->e.equals(sentence)).toString();
@@ -93,37 +124,37 @@ public class VanillaJsPage extends HomePage {
 
 
     public void modifyText(String newInput){
-        WebElement listElements = driver.findElements(By.className("view")).get(1);
+        WebElement listElements = vanillaDriver.findElements(By.className("view")).get(1);
 
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(vanillaDriver);
         actions.moveToElement(listElements).doubleClick()
                 .keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL)
                 .sendKeys(Keys.BACK_SPACE)
                 .sendKeys(newInput)
                 .perform();
 
-        WebElement outsideElement = driver.findElement(By.className("info"));
+        WebElement outsideElement = vanillaDriver.findElement(By.className("info"));
         outsideElement.click();
     }
 
     public void changeToCompletedPage(){
 
         By completedPage = By.xpath("//a[@href='#/completed']");
-        driver.findElement(completedPage).click();
+        vanillaDriver.findElement(completedPage).click();
     }
 
 
     public void changeToAllPage(){
 
         By allPage = By.xpath("//a[@href='#/']");
-        driver.findElement(allPage).click();
+        vanillaDriver.findElement(allPage).click();
     }
 
 
 
     public String amount() {
 
-        return driver.findElement(By.tagName("strong")).getText();
+        return vanillaDriver.findElement(By.tagName("strong")).getText();
 
     }
 

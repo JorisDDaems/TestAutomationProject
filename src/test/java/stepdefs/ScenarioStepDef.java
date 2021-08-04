@@ -30,9 +30,9 @@ public class ScenarioStepDef extends BaseClass {
     @Given("I can click on the link {string}")
     public void iCanClickOnTheLink(String arg0) {
 
-        //vanillaJsPage.clickVanillaJs(arg0);
+        vanillaJsPage.clickLink(arg0);
 
-        driver.findElement(By.linkText(arg0)).click();
+        //driver.findElement(By.linkText(arg0)).click();
 
     }
 
@@ -40,13 +40,13 @@ public class ScenarioStepDef extends BaseClass {
     @When("I type in a todo {string}")
     public void iTypeInATodo(String arg0) {
 
-        driver.findElement(By.className("new-todo")).sendKeys(arg0, Keys.ENTER);
+        vanillaJsPage.enterText(arg0);
+        //driver.findElement(By.className("new-todo")).sendKeys(arg0, Keys.ENTER);
     }
 
     @Then("I can see a todo added to todo list")
     public void i_can_see_a_todo_added_to_todo_list() {
-
-        Assert.assertEquals("Automation is fun!", driver.findElement(By.className("todo-list")).getText());
+        Assert.assertEquals("Automation is fun!", vanillaJsPage.getResult());
     }
 
 
