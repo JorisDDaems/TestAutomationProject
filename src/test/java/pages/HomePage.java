@@ -11,8 +11,8 @@ public class HomePage {
         this.driver = driver;
     }
 
-    public VanillaJsPage clickVanillaJs(){
-        clickLink("Vanilla JS");
+    public VanillaJsPage clickVanillaJs(String string){
+        clickLink(string);
         return new VanillaJsPage(driver);
     }
 

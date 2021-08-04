@@ -6,21 +6,19 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pages.HomePage;
 import pages.VanillaJsPage;
 
-public class ScenarioStepDef {
+public class ScenarioStepDef extends BaseClass {
 
-    WebDriver driver;
-    HomePage homePage;
-    VanillaJsPage vanillaJsPage;
+
 
     @Given("I launch chrome browser")
     public void i_launch_chrome_browser() {
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         driver = new ChromeDriver();
+        vanillaJsPage = new VanillaJsPage(driver);
+        //vanillaJsPage.setChromeDriver();
     }
 
     @Given("I open the website")
@@ -31,6 +29,8 @@ public class ScenarioStepDef {
 
     @Given("I can click on the link {string}")
     public void iCanClickOnTheLink(String arg0) {
+
+        //vanillaJsPage.clickVanillaJs(arg0);
 
         driver.findElement(By.linkText(arg0)).click();
 

@@ -1,13 +1,11 @@
 package base;
 
-import org.testng.annotations.Test;
-import pages.VanillaJsPage;
-
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class VanillaJsTests extends BaseTests {
 
+    /*
     @Test
     public void test1CreateAToDo(){
         VanillaJsPage vanillaJsPage = homePage.clickVanillaJs();
@@ -15,7 +13,7 @@ public class VanillaJsTests extends BaseTests {
         assertEquals(vanillaJsPage.getResult(), "Automation is fun!");
         System.out.println(vanillaJsPage.getToDoListAmount());
     }
-/*
+
     @Test
     public void test2RemoveAToDo(){
         String text1 = "The first to do!";
