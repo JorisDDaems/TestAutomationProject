@@ -13,35 +13,33 @@ public class ScenarioStepDef extends BaseClass {
     @Given("I launch chrome browser")
     public void i_launch_chrome_browser() {
         setUp();
-        /*
-        System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
-        driver = new ChromeDriver();
-        vanillaJsPage = new VanillaJsPage(driver);
-         */
     }
+
+    /**
+     * Method below: redundant : already happens in setup method
+     *
+     */
 
     @And("I open the website")
     public void i_open_the_website() {
         driver.get("https://todomvc.com/");
     }
 
+    /**
+     * Method below: clicks on different input given in scenario outline
+     *
+     */
 
     @Given("I can click on the link {string}")
     public void iCanClickOnTheLink(String arg0) {
-
         vanillaJsPage.clickLink(arg0);
-
-        //driver.findElement(By.linkText(arg0)).click();
-
     }
-
 
     @When("I type in a todo {string}")
     public void iTypeInATodo(String arg0) {
-
         vanillaJsPage.enterText(arg0);
-        //driver.findElement(By.className("new-todo")).sendKeys(arg0, Keys.ENTER);
     }
+
 
     @Then("I can see a todo added to todo list")
     public void i_can_see_a_todo_added_to_todo_list() {
@@ -57,7 +55,7 @@ public class ScenarioStepDef extends BaseClass {
     @And("I can delete a todo")
     public void iCanDeleteATodo() {
         vanillaJsPage.deleteToDo(0);
-        Assert.assertEquals(0, vanillaJsPage.getToDoListAmount());
+        Assert.assertEquals(1, vanillaJsPage.getToDoListAmount());
     }
 
     @And("I can complete a todo")

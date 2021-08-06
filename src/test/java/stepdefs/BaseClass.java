@@ -4,13 +4,11 @@ import org.junit.AfterClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeClass;
-import pages.HomePage;
 import pages.VanillaJsPage;
 
 public class BaseClass {
 
     public WebDriver driver;
-    //public HomePage homePage;
     public VanillaJsPage vanillaJsPage;
 
 
@@ -28,9 +26,6 @@ public class BaseClass {
     public void tearDown(){
         driver.quit();
     }
-
-
-
 
 
 }

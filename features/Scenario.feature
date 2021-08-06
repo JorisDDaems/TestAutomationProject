@@ -4,7 +4,6 @@ Feature: Check out TodoLists
 
   Scenario Outline: Create a ToDo
     Given I launch chrome browser
-    And I open the website
     Given I can click on the link "<item>"
     And I type in a todo "Automation is fun!"
     Then I can see a todo added to todo list

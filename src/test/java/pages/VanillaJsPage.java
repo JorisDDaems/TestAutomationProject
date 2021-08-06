@@ -63,9 +63,8 @@ public class VanillaJsPage {
     public int toDoListAmount(){
 
         By todoList = By.className("todo-list");
-        int todoLists = (int) vanillaDriver.findElements(todoList).stream().count()-1;
 
-        return todoLists;
+        return (int) vanillaDriver.findElements(todoList).stream().count()-1;
     }
 
 
