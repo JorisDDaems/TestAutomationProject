@@ -16,7 +16,7 @@ public class ScenarioStepDef extends BaseClass {
     }
 
     /**
-     * Method below: redundant : already happens in setup method
+     * Method below: redundant : already happens in setup method above
      *
      */
 

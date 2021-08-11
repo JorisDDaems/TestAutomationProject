@@ -87,9 +87,22 @@ public class VanillaJsPage {
 
 
     public void selectCompleteCheckBox(int index){
-        By checkBox = By.xpath("/html/body/section/section/ul/li["+ index +"]/div/input");
-        vanillaDriver.findElement(checkBox).click();
+
+
+        By checkBox1 = By.xpath("/html/body/section/section/ul/li["+ index +"]/div/input");
+
+        vanillaDriver.findElement(checkBox1).click();
+
+
+
+
+        By checkBox2 = By.xpath("/html/body/ng-view/section/section/ul/li[" + index +"]/div/input");
+
+        //vanillaDriver.findElement(checkbox3).click();
     }
+
+
+
 
 
     @FindBy(className = "completed")

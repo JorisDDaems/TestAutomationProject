@@ -1,14 +1,16 @@
 Feature: Check out TodoLists
   As a user, I want to be able to CRUD a todolist so that I can modify the todolist
 
+  Background:
+    Given I launch chrome browser
+    And I open the website
+
 
   Scenario Outline: Create a ToDo
-    Given I launch chrome browser
     Given I can click on the link "<item>"
     And I type in a todo "Automation is fun!"
     Then I can see a todo added to todo list
     And I can close the site
-
 
     Examples:
       | item       |
@@ -18,14 +20,11 @@ Feature: Check out TodoLists
 
 
   Scenario Outline: Remove a ToDo
-    Given I launch chrome browser
-    And I open the website
     Given I can click on the link "<item>"
     And I type in a todo "Automation is fun!"
     Then I can see a todo added to todo list
     And I can delete a todo
     And I can close the site
-
 
     Examples:
       | item       |
@@ -35,8 +34,6 @@ Feature: Check out TodoLists
 
 
   Scenario Outline: Complete a ToDo
-    Given I launch chrome browser
-    And I open the website
     Given I can click on the link "<item>"
     And I type in a todo "Automation is fun!"
     And I type in a todo "owee a second string"
@@ -44,7 +41,6 @@ Feature: Check out TodoLists
     Then I can see all todos added to todo list
     And I can complete a todo
     And I can close the site
-
 
     Examples:
       | item       |
@@ -54,8 +50,6 @@ Feature: Check out TodoLists
 
 
   Scenario Outline: Modify a ToDo
-    Given I launch chrome browser
-    And I open the website
     Given I can click on the link "<item>"
     And I type in a todo "Automation is fun!"
     And I type in a todo "owee a second string"
@@ -63,7 +57,6 @@ Feature: Check out TodoLists
     Then I can see all todos added to todo list
     When I search a todo "Automation is fun!" I can change it to "This is the new input!"
     And I can close the site
-
 
     Examples:
       | item       |
@@ -74,8 +67,6 @@ Feature: Check out TodoLists
 
 
   Scenario Outline: Viewing completed ToDos
-    Given I launch chrome browser
-    And I open the website
     Given I can click on the link "<item>"
     And I type in a todo "Automation is fun!"
     And I type in a todo "owee a second string"
@@ -88,7 +79,6 @@ Feature: Check out TodoLists
     When I change to completed todo page
     Then completed todo page has 1 todo
     And I can close the site
-
 
     Examples:
       | item       |
