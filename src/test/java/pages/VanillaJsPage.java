@@ -27,17 +27,16 @@ public class VanillaJsPage {
     @CacheLookup
     WebElement resultToDo;
 
-
-    @FindBy(xpath = "/html/body/section/section/ul/li[1]/div/button")
+    @FindBy(className = "completed")
     @CacheLookup
-    WebElement deleteButton;
+    WebElement todoChecked;
+
 
 
 
     public void clickLink(String linkText){
         vanillaDriver.findElement(By.linkText(linkText)).click();
     }
-
 
     public void enterText(String text){
         inputField.sendKeys(text, Keys.ENTER);
@@ -46,7 +45,6 @@ public class VanillaJsPage {
     public String getResult(){
         return resultToDo.getText();
     }
-
 
     /**
      *
@@ -84,34 +82,15 @@ public class VanillaJsPage {
         js.executeScript("return document.getElementsByClassName('view')["+ index + "].remove();");
     }
 
-
-
     public void selectCompleteCheckBox(int index){
 
+        WebElement elementToSelect = resultToDo.findElement(By.cssSelector("li:nth-child("+index+")"));
 
-        By checkBox1 = By.xpath("/html/body/section/section/ul/li["+ index +"]/div/input");
-
-        vanillaDriver.findElement(checkBox1).click();
-
-
-
-
-        By checkBox2 = By.xpath("/html/body/ng-view/section/section/ul/li[" + index +"]/div/input");
-
-        //vanillaDriver.findElement(checkbox3).click();
+        elementToSelect.findElement(By.className("toggle")).click();
     }
-
-
-
-
-
-    @FindBy(className = "completed")
-    @CacheLookup
-    WebElement todoChecked;
 
     public String checkIfCheckBoxIsSelected(){
 
-        //By todoChecked = By.className("completed");
         return todoChecked.getText();
     }
 
@@ -121,19 +100,15 @@ public class VanillaJsPage {
         return (int) buttonCount.stream().map(WebElement::getText).count();
     }
 
-
-
-
     public String find(String sentence){
 
         List<WebElement> toDoElements = vanillaDriver.findElements(By.className("view"));
         List<String> toDoList = toDoElements.stream().map(WebElement::getText).collect(Collectors.toList());
         String Element = toDoList.get(1);
-        String element = toDoList.stream().filter(e->e.equals(sentence)).toString();
+        //String element = toDoList.stream().filter(e->e.equals(sentence)).toString();
 
         return Element;
     }
-
 
     public void modifyText(String newInput){
         WebElement listElements = vanillaDriver.findElements(By.className("view")).get(1);
@@ -155,20 +130,15 @@ public class VanillaJsPage {
         vanillaDriver.findElement(completedPage).click();
     }
 
-
     public void changeToAllPage(){
 
         By allPage = By.xpath("//a[@href='#/']");
         vanillaDriver.findElement(allPage).click();
     }
 
-
-
     public String amount() {
 
         return vanillaDriver.findElement(By.tagName("strong")).getText();
-
     }
-
 
 }
