@@ -1,17 +1,11 @@
 package base;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.annotations.Test;
-import pages.HomePage;
-import pages.VanillaJsPage;
-import pages.HoverPage;
-
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class VanillaJsTests extends BaseTests {
 
+/*
     @Test
     public void test1CreateAToDo(){
         VanillaJsPage vanillaJsPage = homePage.clickVanillaJs();
@@ -94,34 +88,5 @@ public class VanillaJsTests extends BaseTests {
 
     }
 
-
-
-
-    @Test
-    public void testHoverDeleteElement(){
-        String text1 = "The first to do!";
-        String text2 = "The second to do!";
-        String text3 = "The third to do!";
-        VanillaJsPage vanillaJsPage = homePage.clickVanillaJs();
-        vanillaJsPage.enterText(text1);
-        vanillaJsPage.enterText(text2);
-        vanillaJsPage.enterText(text3);
-
-
-
-
-
-        HoverPage.FigureCaption caption = HoverPage.hoverOverList(1);
-        //assertTrue(caption.isCaptionDisplayed(), "Caption not displayed");
-        //System.out.println(caption);
-        System.out.println(caption.getTitle());
-        //caption.deleteToDo();
-        System.out.println(caption.getLink());
-        //System.out.println(caption.getLinkText());
-        caption.getLinkText();
-        assertEquals(caption.getTitle(), "The first to do!");
-        //assertEquals(caption.getLinkText(), "The first to do!");
-    }
-
-
+ */
 }
