@@ -5,6 +5,6 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(features = "features/Scenario.feature", publish = true,
-        glue = "stepdefs", dryRun = false, plugin = {"pretty", "html:test-output"})
+        glue = "stepdefs", dryRun = false)
 public class TestRunner {
 }
