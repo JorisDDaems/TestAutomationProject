@@ -1,0 +1,7 @@
+stepdefs\BaseClass.class
+pages\VanillaJsPage.class
+stepdefs\ScenarioStepDef.class
+pages\HomePage.class
+base\BaseTests.class
+base\VanillaJsTests.class
+TestRunner.class
